@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
       if (booking.status === 'booked') {
         // For 'booked' status, end_time is 15 minutes after start_time
-        endTime = new Date(startTime.getTime() + 15 * 60 * 1000).toISOString();
+        endTime = new Date(startTime.getTime() + 30 * 60 * 1000).toISOString();
       }
       // For 'occupied' status, end_time remains null
 
